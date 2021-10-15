@@ -8,9 +8,13 @@ Credits 📃
 <div><a href="https://www.freepik.com/vectors/flower">Flower vector created by macrovector - www.freepik.com</a></div>
 <div><a href="https://www.freepik.com/vectors/business">Business vector created by pikisuperstar - www.freepik.com</a></div>
 
+<hr>
 
 <div>preview 🎬
 https://spandan455.github.io/saurayan/
 </div>
+
+<hr>
+
 release 
 https://github.com/spandan455/saurayan/releases/tag/1.0.0
