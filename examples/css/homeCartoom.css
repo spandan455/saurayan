@@ -245,6 +245,11 @@ body{
     margin: 7px;
 }
 
+.imo{
+    width: 15px;
+    margin: 7px;
+}
+
 .rating h6{
     margin-top: 50px;
     z-index: 2;
