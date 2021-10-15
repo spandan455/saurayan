@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+    
+}
+
+body{
+    overflow-x: hidden;
+    height: 100vh;
+    orientation: portrait;
+    background: #002066;
+}
+
+/* .ar{ */
+    /* width: 100%;
+    height: 100%;
+    background: #002066;
+    z-index: -2;
+} */
+
+#mains{
+    width: 33%;
+    height: 50%;
+    position: relative;
+    top: 30vh;
+    left: 10%;
+}
+
+#mains h1,p{
+    padding: 10px;
+    background: linear-gradient(315deg, #ff4e00 0%, #ffb82a 74%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: lighter;
+}
+
+#mains button{
+    margin: 10px;
+    padding: 10px 30px;
+    border: none;
+    border-top-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+    background: linear-gradient(315deg, #ff4e00 0%, #ffb82a 74%);
+    color: white;
+}
+
+#mains button:hover{
+    opacity: 0.7;
+}
+
+#background{
+    position: absolute;
+    width: 30%;
+    left: 50%;
+    top: 5%;
+    z-index: 0;
+}
+
+#background2{
+    position: absolute;
+    width: 30%;
+    left: 70%;
+    top: 50%;
+}
+
+#content{
+    
+    padding: 10px;
+    color: white;
+}
+
+#navs{
+    /* background:#002066; */
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li a {
+    background: linear-gradient(315deg, #ff4e00 0%, #ffb82a 74%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.navbar a{
+    background: linear-gradient(315deg, #ff0000 0%, #ff6600 74%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand{
+    position: absolute;
+    left: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    
+}
+
+
+.area{
+    position: absolute;
+    top: 100%;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+    background: #e2eafa;
+    /* overflow: hidden; */
+    overflow: hidden;
+}
+
+
+#heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+#sp{
+    background: linear-gradient(315deg, #ff4e00 0%, #ffb82a 74%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 3rem;
+    position: relative;
+    bottom: 15px;
+    font-weight: lighter;
+    padding-left: 10px;
+}
+
+#carderarea{
+    position: relative;
+    top: 10%;
+    left: 0;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.review{
+    width: 30%;
+    height: 90%;
+    background: rgb(255, 255, 255 , 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.review i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 10%;
+    left: 5%;
+    font-size: 1.5rem;
+    /* color: orange; */
+}
+
+
+
+.cardup{
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    flex-direction: column;
+}
+
+/* .cardup h2{
+    background: linear-gradient(315deg, #ff4e00 0%, #ffb82a 74%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+} */
+
+
+.cardup img{
+    width: 70px;
+    margin: 10px;
+    
+}
+
+.cont{
+ 
+    padding: 20px;
+    font-size: 1.1em;
+   text-align: center;
+}
+
+.rating{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.rating::before{
+    content: '';
+    position: absolute;
+    bottom: -7%;
+    height: 100%;
+    width: 100%;
+    background: center/cover no-repeat url('../images/bac.png');
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.imgs{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: 10%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgs img{
+    width: 15px;
+    margin: 7px;
+}
+
+.rating h6{
+    margin-top: 50px;
+    z-index: 2;
+}
