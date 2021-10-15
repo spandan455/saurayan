@@ -10,11 +10,11 @@ Credits 📃
 
 <hr>
 
-<div>preview 🎬
+<div>preview 🎬 : 
 https://spandan455.github.io/saurayan/
 </div>
 
 <hr>
 
-release 
+release  : 
 https://github.com/spandan455/saurayan/releases/tag/1.0.0
