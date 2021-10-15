@@ -9,8 +9,8 @@ Credits 📃
 <div><a href="https://www.freepik.com/vectors/business">Business vector created by pikisuperstar - www.freepik.com</a></div>
 
 
-preview 🎬
+<div>preview 🎬
 https://spandan455.github.io/saurayan/
-
+</div>
 release 
 https://github.com/spandan455/saurayan/releases/tag/1.0.0
