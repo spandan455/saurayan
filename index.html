@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./examples/css/homeCartoom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
@@ -52,7 +53,7 @@
         
       <h4 id="heading"> our <span id="sp"> Reviews </span></h4>
       
-      <div id="carderarea">
+      <div  id="carderarea">
           <div class="review" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.5" data-tilt-speed="400" data-tilt-scale="1.05 " data-tilt-max="10" data-tilt-perspective="500">
               <i class="fas fa-quote-left"></i>
               
@@ -80,7 +81,6 @@
               </div>
               <div class="cardup">
                     <img src="https://raw.githubusercontent.com/spandan455/saurayan/main/examples/images/profile.png" alt="">
-                    <!-- <h2>Unknown</h2> -->
                 </div>
             <div class="rating">
                 <h6>Company name</h6>
@@ -104,7 +104,7 @@
                 <h6>Company name</h6>
             </div>
             <div class="imgs">
-                <img class="imo" src="https://raw.githubusercontent.com/spandan455/saurayan/main/examples/images/facebook.png" alt="">
+                <img  src="https://raw.githubusercontent.com/spandan455/saurayan/main/examples/images/facebook.png" alt="">
                 <img  src="https://raw.githubusercontent.com/spandan455/saurayan/main/examples/images/linkedin.png" alt="">
                 <img  src="https://raw.githubusercontent.com/spandan455/saurayan/main/examples/images/twitter.png" alt="">
             </div>
@@ -114,95 +114,95 @@
   <script src="../js/tilt.js"></script>
 
     <script>
+      const nav = document.querySelector('.navbar');
+      const bg = document.querySelector('#background');
+      const bg2 = document.querySelector('#background2');
+      const con = document.querySelector('#mains')
+      const area = document.querySelector('.area')
+      const ar = document.querySelector('.ar')
+      const cards = document.querySelector('#carderarea')
+      const card = document.querySelectorAll('.review')
+
+      const x1000 = window.matchMedia('(min-width : 994px)')
+      const x650 = window.matchMedia('(max-width : 630px)')
+      const x350 = window.matchMedia('(max-width : 350px)')
+
         function clicked(){
             alert('Click');
         }
-    </script>
-    <script src="https://kit.fontawesome.com/e4e282d657.js" crossorigin="anonymous"></script>
-</body>
-</html>" alt="" id="background2">
-    
-        <div id="content">
-    
-            <div id="mains">
-                <h1>Welcome to Saurayan</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem, ipsum dolor.</p>
-                <button onclick="clicked()">Get Started</button>
-            </div>
-        </div>
-    </div>
-    
 
-    <div class="area">
+        function Media1000(x){
+          if(x.matches){
+            nav.style.display = 'flex';
+            nav.style.justifyContent = 'center';
+            cards.style.flexDirection = 'row'
+          }
+          else{
+            cards.style.flexDirection = 'column'
+            cards.style.top = '30%'
+            area.style.height = '300vh'
+            nav.style.display = 'flex';
+            nav.style.justifyContent = 'end';
+
+            card.forEach(element => {
+              element.style.width = '90%';
+            });
+            
+            bg2.style.display = 'none';
+            bg.style.position = 'absolute';
+            bg.style.top = '35%';
+            bg.style.left = '60%';
+            
+            con.style.width = '50%';
+          }
+        }
+
+        function Media650(x){
+          if(x.matches){
+            bg.style.display = 'none'
+
+            con.style.width = '100%'
+            con.style.display = 'flex'
+            con.style.justifyContent = 'center'
+            con.style.alignItems = 'center'
+            con.style.flexDirection = 'column'
+
+
+            var $el = $('.ar');  
+            var bottom = $el.position().top + $el.outerHeight(true);
+            area.style.top = bottom;
+            
+          }
+          else{
+
+            var $el = $('.ar');  
+            var bottom = $el.position().top + $el.outerHeight(true);
+            area.style.top = bottom;
+          }
+        }
+
+        function Media350(x){
+          if(x.matches){
+            con.style.top = '15vh'
+          }
+          else{
+
+          }
+        }
+
+      
+        Media1000(x1000);
+        x1000.addListener(Media1000);
+
+        Media650(x650);
+        x650.addListener(Media650);
+
+        Media350(x350);
+        x350.addListener(Media350);
+
         
-      <h4 id="heading"> our <span id="sp"> Reviews </span></h4>
-      
-      <div id="carderarea">
-          <div class="review" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.5" data-tilt-speed="400" data-tilt-scale="1.05 " data-tilt-max="10" data-tilt-perspective="500">
-              <i class="fas fa-quote-left"></i>
-              
-              <div class="cont">
-                  <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint perspiciatis, voluptates quos numquam unde tempore! Repellat magni nobis numquam quod!</h6>
-                </div>
-                <div class="cardup">
-                      <img src="../images/profile.png" alt="">
-                      <!-- <h2>Unknown</h2> -->
-                  </div>
-              <div class="rating">
-                  <h6>Company name</h6>
-              </div>
-              <div class="imgs">
-                  <img  src="../images/facebook.png" alt="">
-                  <img  src="../images/linkedin.png" alt="">
-                  <img  src="../images/twitter.png" alt="">
-              </div>
-            </div>
-            <div class="review" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.5" data-tilt-speed="400" data-tilt-scale="1.05 " data-tilt-max="10" data-tilt-perspective="500">
-                <i class="fas fa-quote-left"></i>
-                
-            <div class="cont">
-                <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint perspiciatis, voluptates quos numquam unde tempore! Repellat magni nobis numquam quod!</h6>
-              </div>
-              <div class="cardup">
-                    <img src="../images/profile.png" alt="">
-                    <!-- <h2>Unknown</h2> -->
-                </div>
-            <div class="rating">
-                <h6>Company name</h6>
-            </div>
-            <div class="imgs">
-                <img  src="../images/facebook.png" alt="">
-                <img  src="../images/linkedin.png" alt="">
-                <img  src="../images/twitter.png" alt="">
-            </div>
-        </div>
-        <div class="review" data-tilt data-tilt-glare="true" data-tilt-max-glare="0.5" data-tilt-speed="400" data-tilt-scale="1.05 " data-tilt-max="10" data-tilt-perspective="500">
-            <i class="fas fa-quote-left"></i>
-            <div class="cont">
-                <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint perspiciatis, voluptates quos numquam unde tempore! Repellat magni nobis numquam quod!</h6>
-              </div>
-              <div class="cardup">
-                    <img src="../images/profile.png" alt="">
-                    <!-- <h2>Unknown</h2> -->
-                </div>
-            <div class="rating">
-                <h6>Company name</h6>
-            </div>
-            <div class="imgs">
-                <img  src="../images/facebook.png" alt="">
-                <img  src="../images/linkedin.png" alt="">
-                <img  src="../images/twitter.png" alt="">
-            </div>
-        </div>
-      
-  </div>
-  <script src="./examples/js/tilt.js"></script>
-
-    <script>
-        function clicked(){
-            alert('Click');
-        }
     </script>
     <script src="https://kit.fontawesome.com/e4e282d657.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
